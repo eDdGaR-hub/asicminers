@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ASIC Miners Value</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>ASIC Miners Value</h1>
+    <p>Calcula la rentabilidad de tus ASIC miners en tiempo real.</p>
+  </header>
+
+  <main>
+    <section id="calculator">
+      <h2>Calculadora de Rentabilidad</h2>
+      <form id="mining-form">
+        <label for="electricity-cost">Costo de Electricidad (kWh):</label>
+        <input type="number" id="electricity-cost" step="0.01" required>
+
+        <label for="hashrate">Hashrate del Minero (TH/s):</label>
+        <input type="number" id="hashrate" required>
+
+        <label for="power-consumption">Consumo de Energía (W):</label>
+        <input type="number" id="power-consumption" required>
+
+        <label for="asic-price">Precio del ASIC Miner (USD):</label>
+        <input type="number" id="asic-price" required>
+
+        <button type="submit">Calcular Rentabilidad</button>
+      </form>
+
+      <div id="results">
+        <h3>Resultados</h3>
+        <p><strong>Ganancias Mensuales:</strong> <span id="monthly-profit">-</span></p>
+        <p><strong>ROI (Retorno de Inversión):</strong> <span id="roi">-</span></p>
+        <p><strong>Electricidad Mensual:</strong> <span id="monthly-electricity">-</span></p>
+      </div>
+    </section>
+
+    <section id="asic-prices">
+      <h2>Precios de ASIC Miners en Tiempo Real</h2>
+      <div id="asic-list"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 ASIC Miners Value. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
